@@ -24,9 +24,13 @@ Values('test', 'test@test.com', 'test title', 'test content', '12345');
 INSERT INTO BOARD(author, email, title, content, passwd)
 Values('test2', 'test2@test.com', 'test title2', 'test content2', '11111');
 
-UPDATE BOARD SET readcnt=(SELECT readcnt from BOARD WHERE num=2)+1 WHERE num=2;
+UPDATE BOARD 
+SET readcnt = (SELECT readcnt FROM BOARD WHERE anum = 2) + 1 
+WHERE anum = 2;
 
-UPDATE BOARD SET author='HONG', email='hong@test.com', title="홍길동이 쓴 글", WHERE num=2;
+UPDATE BOARD 
+SET author='HONG', email='hong@test.com', title='홍길동이 쓴 글' 
+WHERE anum=2;
 
 select * from board;
 
