@@ -24,6 +24,9 @@ Values('test', 'test@test.com', 'test title', 'test content', '12345');
 INSERT INTO BOARD(author, email, title, content, passwd)
 Values('test2', 'test2@test.com', 'test title2', 'test content2', '11111');
 
+INSERT INTO BOARD(author, email, title, content, passwd)
+Values('test3', 'test3@test.com', 'test title3', 'test content3', '25222');
+
 UPDATE BOARD 
 SET readcnt = (SELECT readcnt FROM BOARD WHERE anum = 2) + 1 
 WHERE anum = 2;

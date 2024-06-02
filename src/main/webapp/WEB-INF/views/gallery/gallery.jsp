@@ -1,15 +1,13 @@
-<%@page import="org.comstudy.web.board.model.BoardDAOImpl"%>
-<%@page import="org.comstudy.web.board.model.BoardDTO"%>
-<%@ page import="java.util.List"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Gyuri's Page</title>
+		<title>Gyuri's page - Gallery</title>
 		<%@ include file="/inc/mainStyle.jsp" %>
 	</head>
-	<body>
+<body>
 	<div id="root">
 		<div class="container">
 			<!-- top menu -->
@@ -20,8 +18,8 @@
 				
 				<!-- main menu -->
 				<div id="maincontent">
-					<h2>환영합니다!</h2>
-					<p>메롱메롱 사실은 안 환영하지롱</p>
+					<h2>gallery</h2>
+					<p>갤러리이</p>
 				</div>
 			</div>
 			<!-- bottom-->

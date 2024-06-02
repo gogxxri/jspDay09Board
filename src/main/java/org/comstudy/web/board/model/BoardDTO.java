@@ -27,7 +27,11 @@ public class BoardDTO {
 	}
 
 	public BoardDTO(String author, String email, String title, String content, String password) {
-		this(0, "author", "email", "title", "content", "password", "", 0, 0, 0, 0);
+		this(0, author, email, title, content, password, "", 0, 0, 0, 0);
+	}
+	
+	public BoardDTO(int anum, String author, String email, String title, String writeday) {
+		this(anum, author, email, title, "", "", writeday, 0, 0, 0, 0);
 	}
 	
 	
