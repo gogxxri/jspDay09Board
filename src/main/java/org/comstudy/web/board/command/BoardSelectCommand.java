@@ -1,4 +1,4 @@
-package org.comstudy.web.board.command.copy;
+package org.comstudy.web.board.command;
 
 import java.io.IOException;
 
@@ -8,10 +8,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.comstudy.web.board.command.Command;
 
-public class BoardUpdateCommand implements Command {
+public class BoardSelectCommand implements Command {
 
 	@Override
 	public String execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
 		return null;
 	}
 
